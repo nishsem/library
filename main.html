@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Main Page</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f4f7f6;
+            margin: 0;
+            padding: 0;
+        }
+        .nav {
+            background-color: #333;
+            padding: 15px;
+            text-align: center;
+            position: fixed;
+            top: 0;
+            width: 100%;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            z-index: 100;
+        }
+        .nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+        }
+        .nav a:hover {
+            color: #ccc;
+        }
+        .book-container {
+            max-width: 1200px;
+            margin: 120px auto 0;
+            padding: 20px;
+        }
+        .genre-section {
+            margin-bottom: 40px;
+        }
+        .genre-title {
+            font-size: 1.8em;
+            margin-bottom: 20px;
+            color: #333;
+            border-bottom: 2px solid #333;
+            padding-bottom: 5px;
+        }
+        .book {
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+        }
+        .book-item {
+            width: 30%;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        .book img {
+            width: 150px;
+            height: 200px;
+            border-radius: 10px;
+            transition: transform 0.3s ease;
+        }
+        .book img:hover {
+            transform: scale(1.1);
+        }
+        .book-title {
+            margin-top: 10px;
+            font-weight: bold;
+        }
+        @media (max-width: 600px) {
+            .book-item {
+                width: 100%;
+            }
+            .book img {
+                width: 100px;
+                height: 150px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="nav">
+        <a href="login.php">Logout</a>
+        <a href="main.html">Home</a>
+    </div>
+
+    <div class="book-container">
+        <!-- Horror Genre Section -->
+        <div class="genre-section">
+            <h2 class="genre-title">Horror</h2>
+            <div class="book">
+                <div class="book-item">
+                    <a href="borrow-shining.html"><img src="book1.jpg" alt="The Shining"></a>
+                    <p class="book-title">The Shining</p>
+                </div>
+                <div class="book-item">
+                    <a href="borrow-dracula.html"><img src="book2.jpg" alt="Dracula"></a>
+                    <p class="book-title">Dracula</p>
+                </div>
+                <div class="book-item">
+                    <a href="borrow-frankenstein.html"><img src="book3.jpg" alt="Frankenstein"></a>
+                    <p class="book-title">Frankenstein</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Fantasy Genre Section -->
+        <div class="genre-section">
+            <h2 class="genre-title">Fantasy</h2>
+            <div class="book">
+                <div class="book-item">
+                    <a href="borrow-hobbit.html"><img src="book4.jpeg" alt="The Hobbit"></a>
+                    <p class="book-title">The Hobbit</p>
+                </div>
+                <div class="book-item">
+                    <a href="borrow-harrypotter.html"><img src="book5.jpg" alt="Harry Potter"></a>
+                    <p class="book-title">Harry Potter</p>
+                </div>
+                <div class="book-item">
+                    <a href="borrow-gameofthrones.html"><img src="book6.jpg" alt="A Game of Thrones"></a>
+                    <p class="book-title">A Game of Thrones</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Mystery Genre Section -->
+        <div class="genre-section">
+            <h2 class="genre-title">Mystery</h2>
+            <div class="book">
+                <div class="book-item">
+                    <a href="borrow-gonegirl.html"><img src="book7.jpg" alt="Gone Girl"></a>
+                    <p class="book-title">Gone Girl</p>
+                </div>
+                <div class="book-item">
+                    <a href="borrow-girltrain.html"><img src="book8.jpg" alt="The Girl on the Train"></a>
+                    <p class="book-title">The Girl on the Train</p>
+                </div>
+                <div class="book-item">
+                    <a href="borrow-davincicode.html"><img src="book9.jpeg" alt="The Da Vinci Code"></a>
+                    <p class="book-title">The Da Vinci Code</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>

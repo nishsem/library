@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Borrow Book - The Shining</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f4f7f6;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+        .borrow-container {
+            max-width: 400px;
+            width: 100%;
+            background-color: white;
+            padding: 40px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        .book-details {
+            margin-bottom: 20px;
+        }
+        .borrow-button {
+            background-color: #0fb300;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 1em;
+            padding: 10px 20px;
+        }
+        .borrow-button:hover {
+            background-color: #0a8d00;
+        }
+        img {
+            width: 150px;
+            height: 200px;
+            border-radius: 10px;
+            display: block;
+            margin: 20px auto;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="borrow-container">
+        <h1>Borrow Book</h1>
+        <div class="book-details">
+            <img src="book1.jpg" alt="The Shining">
+            <h2>Book Title: The Shining</h2>
+            <p>Author: Stephen King</p>
+            <p>Publication Date: 1977</p>
+            <p>Genre: Horror</p>
+            <p>Description: A classic horror novel about a haunted hotel and a family's terrifying experience with the supernatural.</p>
+        </div>
+        <button class="borrow-button" onclick="window.location.href='borrow-form.html';">Borrow Book</button>
+    </div>
+
+</body>
+</html>
